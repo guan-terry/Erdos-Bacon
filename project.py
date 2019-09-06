@@ -69,8 +69,6 @@ with open('movie_metadata.csv', encoding="utf-8") as csv_file:
         arguments.append(int(sys.argv[i]))
     graph = Graph()
     csv_reader = csv.reader(csv_file, delimiter=',')
-    #parses the csv file with columns passed in as arguments
-    #O(p^2 * n) where n is the number of rows and p is the number of columns for actors
     print("default movie_metadata.csv args are 10, 6, 14")
     for row in csv_reader:
         #row[6] = actor 2, row[10] = actor 1, row[14] = actor 3
