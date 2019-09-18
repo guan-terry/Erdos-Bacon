@@ -37,7 +37,7 @@ class Graph:
     def findShortestPath(self, source, destination):
         return self.BFS(source,destination);
 
-    #helper function that finds the shortest path between 2 people O(V+E)
+    #helper function that finds the shortest path between 2 people
     def BFS(self, source, destination):
         visited = {};
         destLength = {};
